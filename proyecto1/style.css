@@ -1,0 +1,239 @@
+:root{
+    --blanco : #FFFFFF;
+    --oscuro : #212121;
+    --amarillo : #ffC107;
+    --secundario : #0097A7;
+    --secundarioOscuro : #000000;
+    --gris : #757575;
+}
+
+textarea {
+    resize: none;
+}
+
+body{
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    line-height: 1.15;
+}
+
+/*Reutilizables*/
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.boton{
+    background: var(--secundario);
+    padding: 1rem 3rem;
+    color: var(--blanco);
+    border-radius: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-style: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+
+
+.shadown{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/*Header*/
+
+.header-text{
+    text-align: center;
+}
+
+.header-span{
+    font-weight: 400;
+}
+
+/*Navegation*/
+
+.nav-bg{
+    background-color: var(--secundario);
+}
+
+.navegation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegation a{
+    flex-grow: 1;
+    text-align: center;
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.navegation a:hover{
+    background-color: var(--amarillo);
+    color: var(--oscuro);
+}
+
+@media(max-width: 768px) {
+    .navegation{
+        flex-direction: column;
+    }
+}
+
+/*Content*/
+
+
+.bg-img{
+    background-image: url(Imagenes/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+}
+
+.bg-transparent{
+    background-color:   #000000a0;
+    width: 100%;
+    text-align: center;
+    height: 45rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanco);
+}
+
+/*Main*/
+.main {
+    margin: 5rem auto;
+    border-radius: 1rem;
+    padding: 3rem;
+    h2{
+        text-align: center;
+    }
+}
+
+/*Sections*/
+.service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        font-size: 1.7rem;
+        line-height: 1.5;
+        text-align: justify;
+    }
+}
+
+
+.icons{
+    background-color: var(--amarillo);
+    width: 13rem;
+    height: 13rem;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services {
+    gap: 2rem;
+}
+
+
+@media(min-width: 768px) {
+    .services{
+        display: flex;
+    }
+}
+
+/*Formulario*/
+
+.formulario{
+    margin: 0 auto;
+    width: min(60rem, 100%);
+    background-color: var(--gris);
+    padding: 5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+
+    legend{
+        text-align: center;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: var(--amarillo);
+    }
+    fieldset{
+        border: none;
+    }
+}
+
+.campos{
+    color: var(--blanco);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.campo:nth-child(3),
+.campo:nth-child(4){
+    grid-column: 1/3;
+}
+
+.campo{
+    display: flex;
+        justify-content: end;
+    flex-direction: column;
+    textarea{
+        height: 20rem;
+    }
+    label{
+        font-size: 1.6rem;
+    }
+}
+
+.input-text{
+    margin-top: .5rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border-style: none;
+    border-color: none;
+}
+
+.footer{
+    text-align: center;
+}
+
+/*Btn form*/
+
+.enviar{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: end;
+}
+
+.input-boton{
+    display: inline-block;
+    justify-content: end;
+}
