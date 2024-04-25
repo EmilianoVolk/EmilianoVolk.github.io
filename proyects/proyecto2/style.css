@@ -78,7 +78,6 @@ ul {
 
     @media(max-width: 768px) {
         display: block;
-        margin: 1rem
     }
 
 }
@@ -144,7 +143,11 @@ ul {
 }
 
 .header-text{
-    margin-top: 15rem;
+    margin-top: 10rem;
+    
+    @media(min-width: 768px) {
+        margin-top: 15rem;
+    }
     text-align: center;
     color: var(--blanco);
 }
@@ -192,7 +195,7 @@ ul {
 .aside{
     display: flex;
     flex-direction: column;
-
+    margin: 2rem
 }
 
 .information h4{
@@ -258,12 +261,15 @@ ul {
 }
 
 .bloque{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     gap: 2rem;
     padding: 0 0 4rem 0;
     margin: 5rem 0;
     border-bottom: 1px solid var(--claro);
+
+    @media(min-width: 768px) {        
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 }
 
 .bloque:last-child{
@@ -277,26 +283,42 @@ ul {
     background-image: url(img/contacto.jpg);
     width: 100%;
     height: 40rem;
+    @media(max-width: 768px) {
+        background-position: center;
+    }
+}
+
+.contenedor-contacto{
+    h3{
+        text-align: center;
+    }
 }
 
 .formulario{
     background-color: rgb(253, 253, 253);
-    width: 80%;
+    max-width: 80%;
     margin: -5rem auto 5rem auto;
     padding: 5rem;
-    z-index: 1;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 
 .input label{
-    flex: 0 0 9rem;
+    @media(min-width: 768px) {
+        flex: 0 0 9rem;
+    }
 }
+
 .input{
     font-size: 2rem;
     display: flex;
+    flex-direction: column;
     margin-bottom: 2rem;
     gap: 2rem;
+
+    @media(min-width: 768px) {
+        flex-direction: row;
+    }
     
 }
 
@@ -304,10 +326,22 @@ ul {
 .input input, textarea{
     font-size: 2rem;
     padding: .5rem;
-    flex: 1;
     border: 1px solid var(--claro);
+
+    @media(min-width: 768px) {
+        flex: 1;
+    }
 }
 
 textarea{
     height: 15rem;
+    resize: none;
+}
+
+/*Extras*/
+
+.bloque-texto{
+    h4{
+        margin-top: 2rem;
+    }
 }
