@@ -170,19 +170,28 @@ html {
 
 .formulario{
     margin: 0 auto;
-    width: min(60rem, 100%);
+    padding: 3rem;
+    width: auto;
     background-color: var(--gris);
-    padding: 5rem;
     border-radius: 1rem;
     font-weight: bold;
 
+    @media(max-width: 375px) {
+        padding: 5rem 0rem;
+    }
+    
+    @media(min-width: 768px) {
+        width: 60rem;
+        padding: 5rem;
+    }
+
     legend{
         text-align: center;
-            font-size: 1.8rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 2rem;
-            color: var(--amarillo);
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: var(--amarillo);
     }
     fieldset{
         border: none;
@@ -191,9 +200,14 @@ html {
 
 .campos{
     color: var(--blanco);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
+
+    @media(min-width: 768px) {        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
 
 .campo:nth-child(3),
@@ -203,7 +217,7 @@ html {
 
 .campo{
     display: flex;
-        justify-content: end;
+    justify-content: end;
     flex-direction: column;
     textarea{
         height: 20rem;
@@ -220,6 +234,8 @@ html {
     border-style: none;
     border-color: none;
 }
+
+/*---FOOTER---*/
 
 .footer{
     text-align: center;
