@@ -1,0 +1,305 @@
+:root {
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #ffce00;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+    --fuentePrincipal: 'Staatliches', cursive;
+    --fuenteSecundaria : Arial, Helvetica, sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: var(--secundarioOscuro);
+    font-size: 1.8rem;
+    color: var(--blanco);
+    margin: 0;
+}
+
+h1, h2, h3{
+    font-family: var(--fuentePrincipal);
+    color: var(--secundario);
+    text-align: center;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+/*REUSABLE*/
+
+.container{
+    max-width: 120rem;
+    margin: 0 auto;
+    h1{
+        text-align: center;
+        color: var(--secundario);
+        font-size: 4rem;
+    }
+}
+
+.bg-main{
+    background-color: rgb(169, 7, 198);
+    padding: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/*---HEADER---*/
+
+.header{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+/*---NAVEGATION---*/
+
+.navigation{
+    font-family: var(--fuentePrincipal);
+    background-color: var(--primarioOscuro);
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    
+    a{
+        color: var(--blanco);
+        font-size: 2.4rem;
+        padding: 1rem;
+        
+    }
+
+    a:hover{
+        transform: scale(1.1);
+        text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
+    }
+
+    .navigation-current{
+        color: var(--secundario);
+    }
+}
+
+/*---MAIN---*/
+
+.grid{
+    font-family: var(--fuentePrincipal);
+    display: grid;
+    gap: 2rem;
+    @media(max-width: 350px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media(min-width: 350px) {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media(min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.product{
+    background-color: var(--primarioOscuro);
+    padding: 1.5rem;
+
+    .product-name{
+        font-family: var(--fuentePrincipal);
+        color: var(--blanco);
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .product-price{
+        font-family: var(--fuentePrincipal);
+        color: var(--secundario);
+        font-size: 2.8rem;
+        text-align: center;
+    }
+}
+
+.imagen-camisas{
+    background-image: url(../img/grafico1.jpg);
+
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+@media (max-width: 768px) {
+    .grafico--camisas {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+    }
+}
+
+.imagen-nodejs{
+    background-image: url(../img/grafico2.jpg);
+    grid-column: 1/3;
+    grid-row: 7/8;
+    
+    @media(min-width: 768px) {
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+}
+
+.grafico{
+    min-height: 30rem; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*---NOSOTROS---*/
+
+
+.nosotros-text{
+    color: var(--blanco);
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8rem;
+    p{
+        margin: 0;
+    }
+}
+
+.nosotros-imagen{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+@media(min-width: 768px) {
+    .nosotros-imagen{
+        float: right;
+        margin: 0 0 -1rem 1rem;
+    }
+}
+
+/*---BLOQUES---*/
+
+.bloques{
+
+    @media(min-width: 455px) {        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(min-width: 768px) {
+    display: flex;
+    gap: 2rem;
+    }
+
+}
+
+
+
+.bloque{
+    .bloque-imagen{
+        display: flex;
+        justify-content: center;
+    }
+    h3{
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 1.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--blanco);
+        text-align: center;
+    }
+}
+
+/*---FOOTER---*/
+.footer{
+    background-color: var(--primarioOscuro);
+    margin-top: 3rem;
+    padding: 1rem;
+    p{
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--blanco);
+        text-align: center;
+        font-family: var(--fuentePrincipal);
+    }
+}
+
+
+/*---PRODUCT---*/
+.container-main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.product-text{
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    .form{
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2rem;
+    }
+
+    .form-submit{
+        grid-column: 1/3;
+    }
+
+    .inputs{
+        background-color: var(--primarioOscuro);
+        color: var(--blanco);
+        border-style: none;
+        padding: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 2rem;
+        text-align: center;
+
+    }
+
+    .botton{
+        text-transform: uppercase;
+        background-color: var(--secundario);
+        font-family: var(--fuentePrincipal);
+        font-size: 2.5rem;
+        padding: 2rem;
+        border-style: none;
+    }
+
+    .botton:hover{
+        cursor: pointer;
+    }
+}
+
+.form-number::placeholder{
+
+    color: var(--blanco);
+}
+
+.camisa-imagen {
+    width: 100%;
+}
