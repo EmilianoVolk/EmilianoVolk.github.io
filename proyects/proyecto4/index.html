@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="build/css/app.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor header-contenedor">
+            <h1 class="header-text">Rock Festival</h1>
+
+            <nav class="header-nav">
+                <a href="#">Line Up</a>
+                <a href="#">Galery</a>
+                <a href="#">Tickets</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video">
+        <div class="video-bg">
+            <div class="contenedor video-text">
+                <h2>Rock Festival</h2>
+                <p>September 2024, Seattle</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="video/concierto.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <section class="about contenedor">
+        <piture class="about-image">
+            <source srcset="build/img/imagen_vocalista.avif" type="image/avif">
+            <source srcset="build/img/imagen_vocalista.webp" type="image/webp">
+            <img loading="lazy" width="200" height="300" src="build/img/imagen_vocalista.jpg" alt="vocalista">
+        </piture>
+
+        <div class="about-text">
+            <h3>Rock Festival</h3>
+            <p class="about-date">September 2023, Seattle</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos nostrum deserunt aperiam veritatis, eius suscipit atque, velit iusto a ab ut adipisci ipsam eaque maiores odit fugiat temporibus, nemo at laborum.</p>
+        </div>
+    </section>
+
+    <section class="lineup">
+        <h3>Line Up</h3>
+        <p class="lineup-days">Friday 21</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario escenario-azul">
+                <p class="escenario-nombre">First Rock Scenery</p>
+
+                <ul>
+                    <li>24:00 <span>|</span> The Smiths</li>
+                    <li>23:00 <span>|</span> The Smiths</li>
+                    <li>22:00 <span>|</span> The Smiths</li>
+                    <li>21:00 <span>|</span> The Smiths</li>
+                    <li>20:00 <span>|</span> The Smiths</li>
+                    <li>19:00 <span>|</span> The Smiths</li>
+                </ul>
+            </div>
+            <div class="escenario escenario-amarillo">
+                <p class="escenario-nombre">Second Rock Scenery</p>
+
+                <ul>
+                    <li>24:00 <span>|</span> The Smiths</li>
+                    <li>23:00 <span>|</span> The Smiths</li>
+                    <li>22:00 <span>|</span> The Smiths</li>
+                    <li>21:00 <span>|</span> The Smiths</li>
+                    <li>20:00 <span>|</span> The Smiths</li>
+                    <li>19:00 <span>|</span> The Smiths</li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="lineup-days">Saturday 22</p>
+
+        <div class="escenarios-contenedor contenedor">
+            <div class="escenario escenario-amarillo">
+                <p class="escenario-nombre">First Rock Scenery</p>
+        
+                <ul>
+                    <li>24:00 <span>|</span> The Smiths</li>
+                    <li>23:00 <span>|</span> The Smiths</li>
+                    <li>22:00 <span>|</span> The Smiths</li>
+                    <li>21:00 <span>|</span> The Smiths</li>
+                    <li>20:00 <span>|</span> The Smiths</li>
+                    <li>19:00 <span>|</span> The Smiths</li>
+                </ul>
+            </div>
+            
+            <div class="escenario escenario-azul">
+                <p class="escenario-nombre">Second Rock Scenery</p>
+        
+                <ul>
+                    <li>24:00 <span>|</span> The Smiths</li>
+                    <li>23:00 <span>|</span> The Smiths</li>
+                    <li>22:00 <span>|</span> The Smiths</li>
+                    <li>21:00 <span>|</span> The Smiths</li>
+                    <li>20:00 <span>|</span> The Smiths</li>
+                    <li>19:00 <span>|</span> The Smiths</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <h3>Galery</h3>
+        <ul class="galeria-imagenes">
+        </ul>
+    </section>
+
+    <section class="tickets">
+        <h3>Tickets</h3>
+        <div class="contenedor tickets-contenedor">
+            <div class="ticket">
+                <p>One day pass</p>
+
+                <header class="ticket-header">
+                    <p>Includes</p>
+                </header>
+
+                <div class="ticket-body">
+                    <p>Access to Both Scenarios</p>
+                    <p>Food and drink</p>
+                </div>
+
+                <footer class="ticket-footer">
+                    <p>$100</p>
+                </footer>
+            </div>
+            <div class="ticket">
+                <p>Two days pass</p>
+
+                <header class="ticket-header">
+                    <p>Includes</p>
+                </header>
+                
+                <div class="ticket-body">
+                    <p>Access to Both Scenarios</p>
+                    <p>Food and drink</p>
+                    <p>Event Shirt</p>
+                    <p>VIP access</p>
+                </div>
+                
+                <footer class="ticket-footer">
+                    <p>$200</p>
+                </footer>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>Rock Festival - Todos los Derechos reservados</p>
+    </footer>
+    
+    <script src="build/js/app.js"></script>
+</body>
+</html>
