@@ -1,0 +1,233 @@
+:root{
+    --dark : #121212;
+    --grayDark : #333333;
+    --white : #ffffff;
+    --principal : #C0CA33;
+}
+html{
+    font-size: 62.5%
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--dark);
+    margin: 0;
+}
+
+h1{
+    font-size: 10rem;
+    color: var(--principal);
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+a{
+    font-style: none;
+    font-size: 2rem;
+}
+
+h1,h2,h3,p{
+    margin: 0;
+}
+
+
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+ .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.105), var(--dark)), url(images/programacion-2-e1551291144973.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    position: relative;
+
+    .header-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        
+        text-shadow: 3px 0px 11px rgba(255, 255, 255, 0.31);
+    }
+}
+
+
+/* Nav */
+
+.nav{
+    
+    ul{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 2rem;
+        li{
+            a{
+                color: var(--white);
+                text-decoration: none;
+                font-size: 3rem;
+            }
+            a:hover{
+                
+                text-shadow: 3px 0px 11px rgb(255, 255, 255);
+            }
+        }
+
+        li:hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+/* Main */
+
+.main {
+    margin: 5rem auto;
+    background-color: var(--grayDark);
+    color: var(--grayDark);
+    /* Texto oscuro para una mejor legibilidad */
+    padding: 0 50px;
+    border-radius: 50px;
+}
+
+.main-section{
+    h2{
+        color: var(--white);
+        text-align: center;
+        padding: 5rem 0;
+        color: var(--principal);
+    }
+}
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    .proyecto{
+        margin-bottom: 5rem;
+    }
+    @media(min-width: 768px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+        .proyecto {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+.proyecto {
+    height: 40rem;
+    background: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 2.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform .25s;
+
+    iframe{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border: none;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+        border-radius: 1.25rem;
+    }
+
+    a{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .proyecto-overlay{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.577);
+        border-radius: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p{
+            color: var(--white);
+            font-weight: 700;
+            font-size: 5rem;
+        }
+    }
+}
+.proyecto:hover{
+    transform: scale(1.03);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.proyecto h3 {
+    color: #6A0DAD;
+    margin-bottom: 10rem;
+}
+
+.proyecto p {
+    color: #666;
+}
+
+.proyecto a {
+    color: #6A0DAD;
+    text-decoration: none;
+}
+
+.proyecto a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background: #6A0DAD;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
