@@ -1,6 +1,25 @@
 document.addEventListener('DOMContentLoaded', ()=>{
     showIframesRecursive(0);
-})
+    copiarTexto();
+    scrollNav();
+});
+
+
+
+//Scroll smooth
+function scrollNav() {
+    const enlaces = document.querySelectorAll('.nav ul li a');
+
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const seccionScroll = e.target.attributes.href.value;
+            const seccion = document.querySelector(seccionScroll);
+            seccion.scrollIntoView({ behavior: "smooth" })
+        })
+    });
+}
 
 function showIframesRecursive(i) {
     const proyectos = document.querySelector('.proyectos');
@@ -23,6 +42,10 @@ function showIframesRecursive(i) {
 
     //Elemento P
     const texto = document.createElement('P');
+
+    texto.addEventListener('click', ()=>{
+        window.location.href = `proyects/proyecto${i + 1}/index.html`
+    })
 
     //Cuando se pasa el mouse al link
     proyectoDiv.addEventListener('mouseover', ()=>{
@@ -71,6 +94,44 @@ function showIframesRecursive(i) {
     };
 }
 
+function copiarTexto(){
+    copiarTelefono();
+    copiarEmail();
+}
+
+function copiarTelefono(){
+    const telefono = document.querySelector('#telefono-copiar');
+    let phone = document.querySelector('.phone-number');
+
+    textoCopiar(telefono, phone.textContent, `Copied Phone Number: ${phone.textContent}`);
+    textoCopiar(phone, phone.textContent, `Copied Phone Number: ${phone.textContent}`);
+}
+
+function copiarEmail(){
+    const email = document.querySelector('#email-copiar');
+    let mail = document.querySelector('.gmail-copiar');
+
+    textoCopiar(email, mail.textContent, `Copied Email: ${mail.textContent}`);
+    textoCopiar(mail, mail.textContent, `Copied Email: ${mail.textContent}`);
+
+}
+
+
+function textoCopiar(evento, textoParaCopiar, alerta){
+    evento.addEventListener('click', () => {
+        var tempTextArea = document.createElement('textarea');
+        tempTextArea.value = textoParaCopiar;
+        document.body.appendChild(tempTextArea);
+        // Selecciona el texto dentro del elemento de texto temporal
+        tempTextArea.select();
+        // Copia el texto seleccionado al portapapeles
+        document.execCommand('copy');
+        // Elimina el elemento de texto temporal
+        document.body.removeChild(tempTextArea);
+        // Muestra un mensaje o realiza alguna acción después de copiar
+        alert(alerta);
+    })
+}
 
 
 // function showIframesRecursive(i) {
