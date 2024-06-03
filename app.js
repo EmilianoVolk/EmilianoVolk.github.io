@@ -17,6 +17,7 @@ function scrollNav() {
             const seccionScroll = e.target.attributes.href.value;
             const seccion = document.querySelector(seccionScroll);
             seccion.scrollIntoView({ behavior: "smooth" })
+        
         })
     });
 }
@@ -116,7 +117,6 @@ function copiarEmail(){
 
 }
 
-
 function textoCopiar(evento, textoParaCopiar, alerta){
     evento.addEventListener('click', () => {
         var tempTextArea = document.createElement('textarea');
@@ -132,56 +132,3 @@ function textoCopiar(evento, textoParaCopiar, alerta){
         alert(alerta);
     })
 }
-
-
-// function showIframesRecursive(i) {
-//     const proyectos = document.querySelector('.proyectos');
-
-//     // Crear div de proyecto
-//     const proyectoDiv = document.createElement('div');
-//     proyectoDiv.classList.add('proyecto');
-
-//     // Agregar div de proyecto al padre
-//     proyectos.appendChild(proyectoDiv);
-
-//     // Crear link
-//     const link = document.createElement('a');
-//     link.href = `proyects/proyecto${i + 1}/index.html`;
-//     proyectoDiv.appendChild(link);
-
-//     // Crear Iframe
-//     const iframe = document.createElement('iframe');
-//     iframe.src = `proyects/proyecto${i + 1}/index.html`;
-//     iframe.scrolling = 'no';
-
-//     proyectoDiv.appendChild(iframe);
-
-//     // Agregar overlay
-//     const proyectoOverlay = document.createElement('div');
-//     proyectoOverlay.classList.add('proyecto-overlay');
-//     proyectoDiv.appendChild(proyectoOverlay);
-
-//     // Mostrar u ocultar overlay en eventos mouseover y mouseout
-//     link.addEventListener('mouseover', () => {
-//         proyectoOverlay.style.display = 'block';
-//     });
-
-//     link.addEventListener('mouseout', () => {
-//         proyectoOverlay.style.display = 'none';
-//     });
-
-//     iframe.onload = function () {
-//         const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
-//         const pageTitle = iframeDocument.title.toLowerCase();
-
-//         if (pageTitle.includes('error')) {
-//             console.error('Error al cargar el iframe:', iframe.src);
-//             // Detener la recursión si hay un error
-//             proyectos.removeChild(proyectoDiv);
-//             return;
-//         }
-
-//         // Incrementar el contador y continuar recursivamente
-//         showIframesRecursive(i + 1);
-//     };
-// }
