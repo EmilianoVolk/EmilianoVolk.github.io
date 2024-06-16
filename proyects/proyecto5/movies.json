@@ -1,0 +1,214 @@
+{
+    "peliculas": [
+        {
+            "id": 1,
+            "titulo": "The Witcher",
+            "imagen": "https://occ-0-1479-1480.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTeXjMB7Lazb4UDTHLR6EfYaU1Qx0mMqdAeja0OhZQzvf_8FmWl8Z0yNRFCMlJ96F8h-WMlaBTJEsNgsaLOGTmriEVJ7p6GXANTirYp-BNjz2OlE-xAOlOdxqo9xVF1WwslQWg.jpg?r=4ca",
+            "metadata": {
+                "percentage" : "80",
+                "year": "2019",
+                "duration": "1hr 20min",
+                "rating": "TV-MA",
+                "synopsis": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+                "cast": [
+                    "Henry Cavill",
+                    "Anya Chalotra",
+                    "Freya Allan"
+                ],
+                "genre": [
+                    "Fantasy",
+                    "Action",
+                    "Adventure"
+                ],
+                "category": [
+                    "Imaginative",
+                    "Exciting"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "titulo": "Bebe Reno",
+            "imagen": "https://occ-0-1479-1480.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbXUZU9H2TsbvPUx5cxVbmk0i-VlaFWske3mQtmHIZCHntBroi2H1ioacsslOAGmEeYVsUCdwMAfwHEE_Hmy0FDeVXN12s2TmJGRuFsyU-3LZgrOOkKs9DhD5-jsqJWI_tJEWbBNXB8WAeYbPTHX46NjORelm4zp9aKguzaz9lmFbMBNVZgJskBFPXQUthNlyyeZj-obPwg6rStE9dR57A80C1Ipgow6SeFc0gs8Rn4kL2t3PVHgaG6M9J8GRcU9VJ56yHAlkQ8jqAXWuQT7xB0lVdLvk8zTmfJiXWffehRQm18EE-zvlgl00F6fFpYJMoJrkvvpeAAeQJCWpISkGaYDUC0PPlX1wvofphUKTqMs-UQyhFgoOfQ.jpg?r=b43",
+            "metadata" : {
+                "percentage" : "80",
+                "year": "2020",
+                "duration": "2hr 45min",
+                "rating": "R",
+                "synopsis": "A heartwarming tale of a baby reindeer finding its way home.",
+
+                "cast": [
+                    "Actor A",
+                    "Actor B",
+                    "Actor C"
+                ],
+                "genre": [
+                    "Family",
+                    "Adventure"
+                ],
+                "category": [
+                    "Heartwarming",
+                    "Family-friendly"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "titulo": "Breaking Bad",
+            "imagen": "https://occ-0-1479-1480.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABf4-rqh0HjYjtYfSyyxNEm__T5a24uaOnuYLUd13YyyMEPXb6coOkgCwsgjgg9eR1d2V2b6nUUDyIlVjgIYE03UPqmqSOMN_KDI.webp?r=62e",
+            "metadata" : {
+                "percentage" : "98",
+                "year": "2013",
+                "duration": "5 seasons",
+                "rating": "TV-MA",
+                "synopsis": "A chemistry professor with terminal cancer teams up with a former student of his to make and sell methamphetamine so his family doesn't have to struggle financially.",
+
+                "cast": [
+                    "Bryan Cranston",
+                    "Aaron Paul",
+                    "Anna Gunn"
+                ],
+                "genre": [
+                    "Dramatic series",
+                    "Crime series"
+                ],
+                "category": [
+                    "Violent",
+                    "Gross",
+                    "Gloomy"
+                ]
+            }
+        },
+        {
+            "id": 4,
+            "titulo": "Shameless",
+            "imagen": "https://occ-0-1479-1480.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRxeQigdrFFAyHjV2mdF5ikVBM-e5w6EUcRGRrCm-dNSLPYhOtNhOp8r6_rHm4bSEZDzswgnD6GM4e2zaeZtQawI41xgOu8M9bA.webp?r=8d1",
+            "metadata" : {
+                "percentage" : "90",
+                "year": "2020",
+                "duration": "11 seasons",
+                "rating": "TV-MA",
+                "synopsis": "A heartwarming tale of a baby reindeer finding its way home.",
+
+                "cast": [
+                    "William H. Macy",
+                    "Emmy Rossum",
+                    "Jeremy Allen White"
+                ],
+                "genre": [
+                    "Dramatic series",
+                    "Comedy series"
+                ],
+                "category": [
+                    "Spicy",
+                    "Irreverent"
+                ]
+            }
+        },
+        {
+            "id": 5,
+            "titulo": "The Witcher",
+            "imagen": "https://occ-0-1479-1480.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABTeXjMB7Lazb4UDTHLR6EfYaU1Qx0mMqdAeja0OhZQzvf_8FmWl8Z0yNRFCMlJ96F8h-WMlaBTJEsNgsaLOGTmriEVJ7p6GXANTirYp-BNjz2OlE-xAOlOdxqo9xVF1WwslQWg.jpg?r=4ca",
+            "metadata": {
+                "percentage" : "80",
+                "year": "2019",
+                "duration": "1hr 20min",
+                "rating": "TV-MA",
+                "synopsis": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+                "cast": [
+                    "Henry Cavill",
+                    "Anya Chalotra",
+                    "Freya Allan"
+                ],
+                "genre": [
+                    "Fantasy",
+                    "Action",
+                    "Adventure"
+                ],
+                "category": [
+                    "Imaginative",
+                    "Exciting"
+                ]
+            }
+        },
+        {
+            "id": 6,
+            "titulo": "Bebe Reno",
+            "imagen": "https://occ-0-1479-1480.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABbXUZU9H2TsbvPUx5cxVbmk0i-VlaFWske3mQtmHIZCHntBroi2H1ioacsslOAGmEeYVsUCdwMAfwHEE_Hmy0FDeVXN12s2TmJGRuFsyU-3LZgrOOkKs9DhD5-jsqJWI_tJEWbBNXB8WAeYbPTHX46NjORelm4zp9aKguzaz9lmFbMBNVZgJskBFPXQUthNlyyeZj-obPwg6rStE9dR57A80C1Ipgow6SeFc0gs8Rn4kL2t3PVHgaG6M9J8GRcU9VJ56yHAlkQ8jqAXWuQT7xB0lVdLvk8zTmfJiXWffehRQm18EE-zvlgl00F6fFpYJMoJrkvvpeAAeQJCWpISkGaYDUC0PPlX1wvofphUKTqMs-UQyhFgoOfQ.jpg?r=b43",
+            "metadata" : {
+                "percentage" : "80",
+                "year": "2020",
+                "duration": "2hr 45min",
+                "rating": "R",
+                "synopsis": "A heartwarming tale of a baby reindeer finding its way home.",
+
+                "cast": [
+                    "Actor A",
+                    "Actor B",
+                    "Actor C"
+                ],
+                "genre": [
+                    "Family",
+                    "Adventure"
+                ],
+                "category": [
+                    "Heartwarming",
+                    "Family-friendly"
+                ]
+            }
+        },
+        {
+            "id": 7,
+            "titulo": "Breaking Bad",
+            "imagen": "https://occ-0-1479-1480.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABf4-rqh0HjYjtYfSyyxNEm__T5a24uaOnuYLUd13YyyMEPXb6coOkgCwsgjgg9eR1d2V2b6nUUDyIlVjgIYE03UPqmqSOMN_KDI.webp?r=62e",
+            "metadata" : {
+                "percentage" : "98",
+                "year": "2013",
+                "duration": "5 seasons",
+                "rating": "TV-MA",
+                "synopsis": "A chemistry professor with terminal cancer teams up with a former student of his to make and sell methamphetamine so his family doesn't have to struggle financially.",
+
+                "cast": [
+                    "Bryan Cranston",
+                    "Aaron Paul",
+                    "Anna Gunn"
+                ],
+                "genre": [
+                    "Dramatic series",
+                    "Crime series"
+                ],
+                "category": [
+                    "Violent",
+                    "Gross",
+                    "Gloomy"
+                ]
+            }
+        },
+        {
+            "id": 8,
+            "titulo": "Shameless",
+            "imagen": "https://occ-0-1479-1480.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABRxeQigdrFFAyHjV2mdF5ikVBM-e5w6EUcRGRrCm-dNSLPYhOtNhOp8r6_rHm4bSEZDzswgnD6GM4e2zaeZtQawI41xgOu8M9bA.webp?r=8d1",
+            "metadata" : {
+                "percentage" : "90",
+                "year": "2020",
+                "duration": "11 seasons",
+                "rating": "TV-MA",
+                "synopsis": "A heartwarming tale of a baby reindeer finding its way home.",
+
+                "cast": [
+                    "William H. Macy",
+                    "Emmy Rossum",
+                    "Jeremy Allen White"
+                ],
+                "genre": [
+                    "Dramatic series",
+                    "Comedy series"
+                ],
+                "category": [
+                    "Spicy",
+                    "Irreverent"
+                ]
+            }
+        }
+    ]
+}
